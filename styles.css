@@ -9,15 +9,22 @@
 h1 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
 }
+
+/* Rest of the CSS styles... */
+
 
 #question-number {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 18px;
 }
 
 #question {
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 #options div {
@@ -25,6 +32,8 @@ h1 {
   background-color: #e0e0e0;
   margin-bottom: 10px;
   cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
 #options div:hover {
@@ -35,20 +44,25 @@ h1 {
   text-align: center;
   margin-top: 20px;
   font-weight: bold;
+  font-size: 18px;
 }
 
 #previous-btn,
-#next-btn {
+#next-btn,
+#submit-btn {
   padding: 10px 20px;
   background-color: #4caf50;
   color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
 }
 
 #previous-btn:hover,
-#next-btn:hover {
+#next-btn:hover,
+#submit-btn:hover {
   background-color: #45a049;
 }
 
@@ -62,16 +76,48 @@ h1 {
   padding: 20px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
 }
 
 #popup-message {
   text-align: center;
   font-weight: bold;
+  margin-bottom: 20px;
 }
+
 #options div.correct {
   background-color: #a6e6a6;
 }
 
 #options div.wrong {
   background-color: #ffb2b2;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  #question-number {
+    font-size: 16px;
+  }
+
+  #question {
+    font-size: 14px;
+  }
+
+  #result {
+    font-size: 16px;
+  }
+
+  #previous-btn,
+  #next-btn,
+  #submit-btn {
+    font-size: 12px;
+  }
+
+  #popup {
+    font-size: 14px;
+  }
 }
