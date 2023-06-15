@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Topics</title>
+  <meta name="description" content="Choose a quiz topic and subtopic to test your knowledge. Explore quizzes on microbiology, biotechnology, chemistry, and environmental science.">
+  <meta name="keywords" content="quiz topics, microbiology quiz, biotechnology quiz, chemistry quiz, environmental science quiz">
+  <meta name="author" content="Muhammad Rafi M">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Structured Data - Breadcrumb -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://example.com",
+            "name": "Home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://example.com/quiz-topics",
+            "name": "Quiz Topics"
+          }
+        }
+      ]
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    
+    h1 {
+      margin-top: 50px;
+    }
+    
+    .topic-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .topic-button:hover {
+      background-color: #45a049;
+    }
+
+    .subtopic-button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      font-size: 14px;
+      background-color: #e0e0e0;
+      color: black;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .subtopic-button:hover {
+      background-color: #c0c0c0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose a Quiz Topic</h1>
+  <button class="topic-button" onclick="showSubtopics('Microbiology')">Microbiology</button>
+  <button class="topic-button" onclick="showSubtopics('Biotechnology')">Biotechnology</button>
+  <button class="topic-button" onclick="showSubtopics('Chemistry')">Chemistry</button>
+  <button class="topic-button" onclick="showSubtopics('Environmental Science')">Environmental Science</button>
+  <!-- Add more buttons for other quiz topics -->
+  
+  <div id="subtopics-container" style="display: none;">
+    <h2>Select a Subtopic</h2>
+    <button class="subtopic-button" onclick="startQuiz('Techniques in Microbiology')">Techniques in Microbiology</button>
+    <button class="subtopic-button" onclick="startQuiz('General Microbiology and Microbial Physiology')">General Microbiology and Microbial Physiology</button>
+  </div>
+
+  <div id="subtopics-container-biotech" style="display: none;">
+    <h2>Select a Subtopic</h2>
+    <button class="subtopic-button" onclick="startQuiz('Biotechnology Subtopic 1')">Biotechnology Subtopic 1</button>
+    <button class="subtopic-button" onclick="startQuiz('Biotechnology Subtopic 2')">Biotechnology Subtopic 2</button>
+  </div>
+
+  <div id="subtopics-container-chem" style="display: none;">
+    <h2>Select a Subtopic</h2>
+    <button class="subtopic-button" onclick="startQuiz('Chemistry Subtopic 1')">Chemistry Subtopic 1</button>
+    <button class="subtopic-button" onclick="startQuiz('Chemistry Subtopic 2')">Chemistry Subtopic 2</button>
+  </div>
+
+  <div id="subtopics-container-env" style="display: none;">
+    <h2>Select a Subtopic</h2>
+    <button class="subtopic-button" onclick="startQuiz('Environmental Science Subtopic 1')">Environmental Science Subtopic 1</button>
+    <button class="subtopic-button" onclick="startQuiz('Environmental Science Subtopic 2')">Environmental Science Subtopic 2</button>
+  </div>
+  
+  <script>
+    function showSubtopics(topic) {
+      const subtopicsContainer = document.getElementById("subtopics-container");
+      const subtopicsContainerBiotech = document.getElementById("subtopics-container-biotech");
+      const subtopicsContainerChem = document.getElementById("subtopics-container-chem");
+      const subtopicsContainerEnv = document.getElementById("subtopics-container-env");
+      
+      if (topic === "Microbiology") {
+        subtopicsContainer.style.display = "block";
+        subtopicsContainerBiotech.style.display = "none";
+        subtopicsContainerChem.style.display = "none";
+        subtopicsContainerEnv.style.display = "none";
+      } else if (topic === "Biotechnology") {
+        subtopicsContainer.style.display = "none";
+        subtopicsContainerBiotech.style.display = "block";
+        subtopicsContainerChem.style.display = "none";
+        subtopicsContainerEnv.style.display = "none";
+      } else if (topic === "Chemistry") {
+        subtopicsContainer.style.display = "none";
+        subtopicsContainerBiotech.style.display = "none";
+        subtopicsContainerChem.style.display = "block";
+        subtopicsContainerEnv.style.display = "none";
+      } else if (topic === "Environmental Science") {
+        subtopicsContainer.style.display = "none";
+        subtopicsContainerBiotech.style.display = "none";
+        subtopicsContainerChem.style.display = "none";
+        subtopicsContainerEnv.style.display = "block";
+      }
+    }
+    
+    function startQuiz(subtopic) {
+      // Redirect to the quiz page for the selected subtopic
+      const subtopicWithoutSpaces = subtopic.toLowerCase().replace(/ /g, '');
+      window.location.href = subtopicWithoutSpaces + ".html";
+    }
+  </script>
+</body>
+</html>
