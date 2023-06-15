@@ -243,7 +243,638 @@ const quizData = [
     question: "Bacteria that require low oxygen levels for growth are called:",
     options: ["a) Obligate aerobes", "b) Obligate anaerobes", "c) Facultative anaerobes", "d) Microaerophiles"],
     answer: "d) Microaerophiles"
+  },
+    {
+    question: "Which of the following is NOT an essential nutrient required by bacteria?",
+    options: [
+      "a) Carbon",
+      "b) Nitrogen",
+      "c) Oxygen",
+      "d) Phosphorus"
+    ],
+    answer: "c) Oxygen"
+  },
+  {
+    question: "Bacteria that can synthesize their own organic compounds from inorganic sources are known as:",
+    options: [
+      "a) Autotrophs",
+      "b) Heterotrophs",
+      "c) Phototrophs",
+      "d) Chemotrophs"
+    ],
+    answer: "a) Autotrophs"
+  },
+  {
+    question: "Bacteria that require preformed organic compounds as carbon sources are called:",
+    options: [
+      "a) Autotrophs",
+      "b) Heterotrophs",
+      "c) Phototrophs",
+      "d) Chemotrophs"
+    ],
+    answer: "b) Heterotrophs"
+  },
+  {
+    question: "The mode of nutrition in which bacteria use light energy to convert inorganic compounds into organic compounds is called:",
+    options: [
+      "a) Phototrophy",
+      "b) Chemotrophy",
+      "c) Autotrophy",
+      "d) Heterotrophy"
+    ],
+    answer: "a) Phototrophy"
+  },
+  {
+    question: "Which type of transport mechanism requires energy in the form of ATP to move nutrients across the bacterial cell membrane?",
+    options: [
+      "a) Passive diffusion",
+      "b) Facilitated diffusion",
+      "c) Active transport",
+      "d) Group translocation"
+    ],
+    answer: "c) Active transport"
+  },
+  {
+    question: "Agar is commonly used in the preparation of solid media because it:",
+    options: [
+      "a) Enhances bacterial growth",
+      "b) Provides essential nutrients",
+      "c) Allows for easy sterilization",
+      "d) Provides a liquid environment for bacteria"
+    ],
+    answer: "c) Allows for easy sterilization"
+  },
+  {
+    question: "Culture media that contain specific components to selectively promote the growth of certain microorganisms while inhibiting others are called:",
+    options: [
+      "a) Defined media",
+      "b) Complex media",
+      "c) Selective media",
+      "d) Differential media"
+    ],
+    answer: "c) Selective media"
+  },
+  {
+    question: "Differential media are designed to differentiate between different types of microorganisms based on their:",
+    options: [
+      "a) Carbon source",
+      "b) Oxygen requirements",
+      "c) Metabolic activities or appearance",
+      "d) Energy source"
+    ],
+    answer: "c) Metabolic activities or appearance"
+  },
+  {
+    question: "Which type of culture media is used to increase the numbers of a specific group of bacteria present in a mixed population?",
+    options: [
+      "a) Defined media",
+      "b) Complex media",
+      "c) Selective media",
+      "d) Enrichment media"
+    ],
+    answer: "d) Enrichment media"
+  },
+  {
+    question: "Culture media with a known and precise composition, where all components are specified, are called:",
+    options: [
+      "a) Defined media",
+      "b) Complex media",
+      "c) Selective media",
+      "d) Enrichment media"
+    ],
+    answer: "a) Defined media"
+  },
+    {
+    question: "Culture media designed to increase the numbers of a specific group of bacteria present in a mixed population are called:",
+    options: [
+      "a) Defined media",
+      "b) Complex media",
+      "c) Selective media",
+      "d) Enrichment media"
+    ],
+    answer: "d) Enrichment media"
+  },
+  {
+    question: "Which of the following is NOT a type of bacterial nutritional type?",
+    options: [
+      "a) Photoheterotroph",
+      "b) Chemoautotroph",
+      "c) Photoautotroph",
+      "d) Osmotroph"
+    ],
+    answer: "d) Osmotroph"
+  },
+    {
+  question: "Which of the following is NOT a method of bacterial reproduction?",
+  options: [
+    "a) Binary fission",
+    "b) Conjugation",
+    "c) Meiosis",
+    "d) Budding"
+  ],
+  answer: "c) Meiosis"
+},
+{
+  question: "Bacterial flagella are used primarily for:",
+  options: [
+    "a) Sensing the environment",
+    "b) Exchanging genetic material",
+    "c) Facilitating cell division",
+    "d) Bacterial locomotion"
+  ],
+  answer: "d) Bacterial locomotion"
+},
+{
+  question: "Which of the following is an example of a gram-positive bacterium?",
+  options: [
+    "a) Escherichia coli",
+    "b) Staphylococcus aureus",
+    "c) Salmonella enterica",
+    "d) Pseudomonas aeruginosa"
+  ],
+  answer: "b) Staphylococcus aureus"
+},
+{
+  question: "Bacterial endospores are highly resistant structures that can withstand extreme conditions. Which of the following genera is known for producing endospores?",
+  options: [
+    "a) Streptococcus",
+    "b) Lactobacillus",
+    "c) Clostridium",
+    "d) Bacillus"
+  ],
+  answer: "d) Bacillus"
+},
+{
+  question: "Antibiotics are substances that can inhibit the growth or kill bacteria. Which of the following is NOT an example of an antibiotic?",
+  options: [
+    "a) Penicillin",
+    "b) Streptomycin",
+    "c) Tetracycline",
+    "d) Insulin"
+  ],
+  answer: "d) Insulin"
+},
+{
+  question: "Bacterial transformation is a process in which bacteria take up and incorporate foreign DNA into their genome. Which scientist is credited with discovering bacterial transformation?",
+  options: [
+    "a) Louis Pasteur",
+    "b) Robert Koch",
+    "c) Frederick Griffith",
+    "d) Alexander Fleming"
+  ],
+  answer: "c) Frederick Griffith"
+},
+    {
+    question: "Which of the following air pollutants is primarily responsible for the formation of acid rain?",
+    options: [
+      "a) Carbon dioxide (CO2)",
+      "b) Nitrogen oxides (NOx)",
+      "c) Sulfur dioxide (SO2)",
+      "d) Methane (CH4)"
+    ],
+    answer: "c) Sulfur dioxide (SO2)"
+  },
+  {
+    question: "Which of the following is a secondary air pollutant?",
+    options: [
+      "a) Carbon monoxide (CO)",
+      "b) Particulate matter (PM)",
+      "c) Ozone (O3)",
+      "d) Lead (Pb)"
+    ],
+    answer: "c) Ozone (O3)"
+  },
+  {
+    question: "What is the primary source of anthropogenic greenhouse gases?",
+    options: [
+      "a) Volcanic eruptions",
+      "b) Forest fires",
+      "c) Industrial activities",
+      "d) Natural wetlands"
+    ],
+    answer: "c) Industrial activities"
+  },
+  {
+    question: "Which of the following is not a method for controlling water pollution?",
+    options: [
+      "a) Coagulation and flocculation",
+      "b) Reverse osmosis",
+      "c) Activated sludge process",
+      "d) Crop rotation"
+    ],
+    answer: "d) Crop rotation"
+  },
+  {
+    question: "Which of the following pollutants is associated with eutrophication in water bodies?",
+    options: [
+      "a) Phosphates",
+      "b) Mercury",
+      "c) Radon",
+      "d) Asbestos"
+    ],
+    answer: "a) Phosphates"
+  },
+  {
+    question: "The process of removing salt from seawater to obtain freshwater is called:",
+    options: [
+      "a) Desalination",
+      "b) Distillation",
+      "c) Filtration",
+      "d) Chlorination"
+    ],
+    answer: "a) Desalination"
+  },
+  {
+    question: "Which of the following is not a common method for solid waste management?",
+    options: [
+      "a) Incineration",
+      "b) Landfilling",
+      "c) Composting",
+      "d) Leaching"
+    ],
+    answer: "d) Leaching"
+  },
+  {
+    question: "The primary cause of soil erosion is:",
+    options: [
+      "a) Deforestation",
+      "b) Acid rain",
+      "c) Industrial pollution",
+      "d) Overgrazing"
+    ],
+    answer: "a) Deforestation"
+  },
+  {
+    question: "Which of the following is a non-point source of water pollution?",
+    options: [
+      "a) Sewage treatment plant",
+      "b) Industrial discharge pipe",
+      "c) Oil spill from a tanker",
+      "d) Agricultural runoff"
+    ],
+    answer: "d) Agricultural runoff"
+  },
+  {
+    question: "The Clean Air Act is a federal law enacted in which country?",
+    options: [
+      "a) United States",
+      "b) United Kingdom",
+      "c) Canada",
+      "d) Australia"
+    ],
+    answer: "a) United States"
+  },
+  {
+    question: "Which of the following pollutants is responsible for the depletion of the ozone layer?",
+    options: [
+      "a) Carbon dioxide (CO2)",
+      "b) Methane (CH4)",
+      "c) Chlorofluorocarbons (CFCs)",
+      "d) Nitrous oxide (N2O)"
+    ],
+    answer: "c) Chlorofluorocarbons (CFCs)"
+  },
+  {
+    question: "Which of the following is a primary source of indoor air pollution?",
+    options: [
+      "a) Vehicle emissions",
+      "b) Industrial smokestacks",
+      "c) Pesticides",
+      "d) Combustion of solid fuels"
+    ],
+    answer: "d) Combustion of solid fuels"
+  },
+  {
+    question: "The pH scale is used to measure the acidity or alkalinity of a substance. What pH value represents neutral conditions?",
+    options: [
+      "a) 0",
+      "b) 7",
+      "c) 14",
+      "d) None of the above"
+    ],
+    answer: "b) 7"
+  },
+  {
+    question: "Which of the following is a renewable source of energy?",
+    options: [
+      "a) Natural gas",
+      "b) Coal",
+      "c) Nuclear power",
+      "d) Solar power"
+    ],
+    answer: "d) Solar power"
+  },
+  {
+    question: "Which of the following pollutants is responsible for causing respiratory problems such as asthma and bronchitis?",
+    options: [
+      "a) Lead",
+      "b) Carbon monoxide (CO)",
+      "c) Particulate matter (PM)",
+      "d) Sulfur dioxide (SO2)"
+    ],
+    answer: "c) Particulate matter (PM)"
+  },
+    {
+    question: "Which stage of viral growth involves integration of viral genetic material into the host cell's genome?",
+    options: [
+      "a) Attachment",
+      "b) Penetration",
+      "c) Lytic stage",
+      "d) Lysogenic stage"
+    ],
+    answer: "d) Lysogenic stage"
+  },
+  {
+    question: "Which of the following methods is commonly used for the cultivation of animal viruses?",
+    options: [
+      "a) Embryonated eggs",
+      "b) Tissue culture",
+      "c) Plaque assay",
+      "d) Real-time PCR"
+    ],
+    answer: "b) Tissue culture"
+  },
+  {
+    question: "Which viral quantitation method involves counting the number of plaques formed on a cell monolayer?",
+    options: [
+      "a) Hemagglutination assay",
+      "b) Endpoint dilution assay",
+      "c) Plaque assay",
+      "d) Real-time PCR"
+    ],
+    answer: "c) Plaque assay"
+  },
+  {
+    question: "The process of determining the concentration of infectious viral particles in a sample is called:",
+    options: [
+      "a) Viral attachment",
+      "b) Viral penetration",
+      "c) Viral quantitation",
+      "d) Viral replication"
+    ],
+    answer: "c) Viral quantitation"
+  },
+  {
+    question: "Which of the following methods is NOT suitable for the cultivation of viruses?",
+    options: [
+      "a) Cell culture",
+      "b) Embryonated eggs",
+      "c) PCR amplification",
+      "d) Animal models"
+    ],
+    answer: "c) PCR amplification"
+  },
+  {
+    question: "Which viral quantitation method utilizes the formation of visible clumps of red blood cells?",
+    options: [
+      "a) Hemagglutination assay",
+      "b) Plaque assay",
+      "c) Endpoint dilution assay",
+      "d) Real-time PCR"
+    ],
+    answer: "a) Hemagglutination assay"
+  },
+  {
+    question: "The lytic stage of viral growth is characterized by:",
+    options: [
+      "a) Integration of viral genetic material into the host genome",
+      "b) Replication of viral genetic material",
+      "c) Release of viral particles through cell lysis",
+      "d) Dormancy of viral genetic material within the host cell"
+    ],
+    answer: "c) Release of viral particles through cell lysis"
+  },
+  {
+    question: "Which of the following viral cultivation methods involves growing isolated tissue or organ fragments?",
+    options: [
+      "a) Cell culture",
+      "b) Embryonated eggs",
+      "c) Tissue culture",
+      "d) Animal models"
+    ],
+    answer: "c) Tissue culture"
+  },
+  {
+    question: "The endpoint dilution assay determines the viral titer based on:",
+    options: [
+      "a) The number of plaques formed on a cell monolayer",
+      "b) The last dilution that shows evidence of viral growth",
+      "c) The degree of hemagglutination observed",
+      "d) Real-time amplification of viral genetic material"
+    ],
+    answer: "b) The last dilution that shows evidence of viral growth"
+  },
+  {
+    question: "Which method is commonly used to quantify bacteriophages?",
+    options: [
+      "a) Plaque assay",
+      "b) Hemagglutination assay",
+      "c) Endpoint dilution assay",
+      "d) Real-time PCR"
+    ],
+    answer: "a) Plaque assay"
+  },
+    {
+    question: "Which metabolic process involves the controlled breakdown of organic molecules to generate energy in bacteria?",
+    options: [
+      "a) Photosynthesis",
+      "b) Fermentation",
+      "c) Respiration",
+      "d) Glycolysis"
+    ],
+    answer: "c) Respiration"
+  },
+  {
+    question: "In aerobic respiration, what serves as the final electron acceptor?",
+    options: [
+      "a) Oxygen",
+      "b) Nitrate",
+      "c) Carbon dioxide",
+      "d) Sulfate"
+    ],
+    answer: "a) Oxygen"
+  },
+  {
+    question: "Which metabolic pathway generates a proton gradient across the membrane to drive ATP synthesis in bacteria?",
+    options: [
+      "a) Glycolysis",
+      "b) Fermentation",
+      "c) TCA cycle",
+      "d) Electron transport chain"
+    ],
+    answer: "d) Electron transport chain"
+  },
+  {
+    question: "Which of the following is a common fermentation product in bacteria?",
+    options: [
+      "a) Carbon dioxide",
+      "b) Oxygen",
+      "c) Nitrate",
+      "d) Acetyl-CoA"
+    ],
+    answer: "a) Carbon dioxide"
+  },
+  {
+    question: "Which metabolic process occurs in the absence of external electron acceptors?",
+    options: [
+      "a) Anaerobic respiration",
+      "b) Aerobic respiration",
+      "c) Glycolysis",
+      "d) Citric acid cycle"
+    ],
+    answer: "a) Anaerobic respiration"
+  },
+  {
+    question: "During fermentation, which molecule is not regenerated?",
+    options: [
+      "a) NADH",
+      "b) ATP",
+      "c) NAD+",
+      "d) Pyruvate"
+    ],
+    answer: "a) NADH"
+  },
+  {
+    question: "Which regulatory mechanism involves the inhibition or activation of enzymes through the binding of specific molecules?",
+    options: [
+      "a) Gene expression control",
+      "b) Allosteric regulation",
+      "c) Feedback inhibition",
+      "d) Oxidative phosphorylation"
+    ],
+    answer: "b) Allosteric regulation"
+  },
+  {
+    question: "Which metabolic process is less efficient in terms of energy yield compared to respiration?",
+    options: [
+      "a) Glycolysis",
+      "b) Fermentation",
+      "c) TCA cycle",
+      "d) Oxidative phosphorylation"
+    ],
+    answer: "b) Fermentation"
+  },
+  {
+    question: "What is the primary purpose of the electron transport chain in bacteria?",
+    options: [
+      "a) ATP synthesis",
+      "b) Substrate-level phosphorylation",
+      "c) Oxidation of organic molecules",
+      "d) Regeneration of NAD+"
+    ],
+    answer: "a) ATP synthesis"
+  },
+  {
+    question: "Which of the following is a common energy-generating pathway in both bacteria and eukaryotes?",
+    options: [
+      "a) Photosynthesis",
+      "b) Glycolysis",
+      "c) Fermentation",
+      "d) Citric acid cycle"
+    ],
+    answer: "b) Glycolysis"
+  },
+    {
+    question: "Which enzyme is responsible for unwinding the DNA double helix during replication?",
+    options: [
+      "a) DNA polymerase",
+      "b) DNA helicase",
+      "c) RNA polymerase",
+      "d) DNA ligase"
+    ],
+    answer: "b) DNA helicase"
+  },
+  {
+    question: "In which direction is DNA synthesized during replication?",
+    options: [
+      "a) 5' to 3'",
+      "b) 3' to 5'",
+      "c) Bidirectionally",
+      "d) Randomly"
+    ],
+    answer: "a) 5' to 3'"
+  },
+  {
+    question: "Which process involves the synthesis of RNA from a DNA template?",
+    options: [
+      "a) DNA replication",
+      "b) Transcription",
+      "c) Translation",
+      "d) DNA repair"
+    ],
+    answer: "b) Transcription"
+  },
+  {
+    question: "Which RNA molecule serves as the template for protein synthesis?",
+    options: [
+      "a) mRNA",
+      "b) tRNA",
+      "c) rRNA",
+      "d) siRNA"
+    ],
+    answer: "a) mRNA"
+  },
+  {
+    question: "The genetic code is a triplet code, where each triplet of nucleotides is called a:",
+    options: [
+      "a) Codon",
+      "b) Anticodon",
+      "c) Exon",
+      "d) Intron"
+    ],
+    answer: "a) Codon"
+  },
+  {
+    question: "Plasmids are:",
+    options: [
+      "a) Circular RNA molecules",
+      "b) Extrachromosomal DNA molecules",
+      "c) Bacterial ribosomal components",
+      "d) Coding regions within the chromosome"
+    ],
+    answer: "b) Extrachromosomal DNA molecules"
+  },
+  {
+    question: "Which process involves the transfer of genetic material between bacteria through direct cell-to-cell contact?",
+    options: [
+      "a) Conjugation",
+      "b) Transformation",
+      "c) Transduction",
+      "d) Replication"
+    ],
+    answer: "a) Conjugation"
+  },
+  {
+    question: "Genetic recombination can occur through all of the following mechanisms EXCEPT:",
+    options: [
+      "a) Conjugation",
+      "b) Transformation",
+      "c) Replication",
+      "d) Transduction"
+    ],
+    answer: "c) Replication"
+  },
+  {
+    question: "Which type of plasmid carries genes for antibiotic resistance?",
+    options: [
+      "a) F plasmid",
+      "b) R plasmid",
+      "c) Virulence plasmid",
+      "d) Transposon"
+    ],
+    answer: "b) R plasmid"
+  },
+  {
+    question: "In bacterial genetics, the transfer of genetic material through bacterial viruses is known as:",
+    options: [
+      "a) Conjugation",
+      "b) Transformation",
+      "c) Transduction",
+      "d) Replication"
+    ],
+    answer: "c) Transduction"
   }
+
 
   // Add more quiz questions following the same format
 ];
