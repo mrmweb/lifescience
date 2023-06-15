@@ -1,3 +1,8 @@
+
+
+
+
+
 const quizData = [
   {
     question: "Which microscopy technique uses visible light to illuminate the sample?",
@@ -383,23 +388,27 @@ const quizData = [
   // Add more questions here...
 ];
 
-
 const questionElement = document.getElementById("question");
 const optionsElement = document.getElementById("options");
 const questionNumberElement = document.getElementById("question-number");
 const previousButton = document.getElementById("previous-btn");
 const nextButton = document.getElementById("next-btn");
+const submitButton = document.getElementById("submit-btn");
 const resultElement = document.getElementById("result");
+const progressBar = document.getElementById("progress-bar");
 
+let shuffledQuizData = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Load the first question
-loadQuestion();
+// Shuffle the quiz data
+function shuffleQuizData() {
+  shuffledQuizData = quizData.sort(() => Math.random() - 0.5);
+}
 
-// Load a new question
+// Load the first question
 function loadQuestion() {
-  const currentQuestion = quizData[currentQuestionIndex];
+  const currentQuestion = shuffledQuizData[currentQuestionIndex];
   questionNumberElement.textContent = `Question ${currentQuestionIndex + 1}`;
   questionElement.textContent = currentQuestion.question;
 
@@ -411,13 +420,14 @@ function loadQuestion() {
     optionElement.addEventListener("click", checkAnswer);
   });
 
-  updateButtons(); // Update the state of the previous and next buttons
+  updateButtons();
+  updateProgressBar();
 }
 
 // Check the selected answer
 function checkAnswer(event) {
   const selectedOption = event.target.textContent;
-  const currentQuestion = quizData[currentQuestionIndex];
+  const currentQuestion = shuffledQuizData[currentQuestionIndex];
 
   if (selectedOption === currentQuestion.answer) {
     score++;
@@ -426,20 +436,14 @@ function checkAnswer(event) {
   } else {
     score += 1 / 3; // Score penalty for wrong answer
     event.target.classList.add("wrong");
-    showPopup("Wrong! Try again.");
+    showPopup("Wrong! The correct answer is: " + currentQuestion.answer);
   }
 
   optionsElement.querySelectorAll("div").forEach((optionElement) => {
     optionElement.removeEventListener("click", checkAnswer);
   });
 
-  updateButtons(); // Update the state of the previous and next buttons
-  updateScoreProgress(); // Update the score progress
-}
-
-// Update the score progress
-function updateScoreProgress() {
-  scoreProgressElement.textContent = `Score: ${score}/${quizData.length}`;
+  updateButtons();
 }
 
 // Show a popup message
@@ -458,7 +462,8 @@ function showPopup(message) {
 // Update the state of the previous and next buttons
 function updateButtons() {
   previousButton.disabled = currentQuestionIndex === 0;
-  nextButton.disabled = currentQuestionIndex === quizData.length - 1;
+  nextButton.disabled = currentQuestionIndex === shuffledQuizData.length - 1;
+  submitButton.disabled = false;
 }
 
 // Show the previous question
@@ -466,31 +471,59 @@ previousButton.addEventListener("click", () => {
   if (currentQuestionIndex > 0) {
     currentQuestionIndex--;
     loadQuestion();
+    optionsElement.querySelectorAll("div").forEach((optionElement) => {
+      optionElement.classList.remove("correct", "wrong");
+    });
   }
 });
 
-// Show the next question
+// Show the next question or submit the quiz
 nextButton.addEventListener("click", () => {
-  if (currentQuestionIndex < quizData.length - 1) {
+  if (currentQuestionIndex < shuffledQuizData.length - 1) {
     currentQuestionIndex++;
     loadQuestion();
+    optionsElement.querySelectorAll("div").forEach((optionElement) => {
+      optionElement.classList.remove("correct", "wrong");
+    });
   } else {
-    showResult();
+    submitQuiz();
   }
 });
 
-// Show the final result
-function showResult() {
-  questionNumberElement.style.display = "none";
+// Submit the quiz
+submitButton.addEventListener("click", () => {
+  submitQuiz();
+});
+
+// Submit the quiz and show the final result
+function submitQuiz() {
+  const percentageScore = Math.round((score / shuffledQuizData.length) * 100);
+  hideQuizElements();
+  resultElement.style.display = "block";
+  resultElement.textContent = `Your score: ${percentageScore}%`;
+}
+
+// Hide quiz elements
+function hideQuizElements() {
   questionElement.style.display = "none";
   optionsElement.style.display = "none";
   previousButton.style.display = "none";
   nextButton.style.display = "none";
+  submitButton.style.display = "none";
+  progressBar.style.display = "none";
+}
 
-  resultElement.style.display = "block";
-  resultElement.textContent = `Your score: ${score}/${quizData.length}`;
+// Update the progress bar
+function updateProgressBar() {
+  const progress = ((currentQuestionIndex + 1) / shuffledQuizData.length) * 100;
+  progressBar.style.width = `${progress}%`;
+}
+
+// Initialize the quiz
+function initializeQuiz() {
+  shuffleQuizData();
+  loadQuestion();
 }
 
 // Initial setup
-updateButtons();
-updateScoreProgress();
+initializeQuiz();
